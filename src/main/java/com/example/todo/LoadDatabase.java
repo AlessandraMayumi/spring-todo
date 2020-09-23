@@ -13,7 +13,7 @@ public class LoadDatabase {
     @Bean
     CommandLineRunner initDatabase(TodoRepository repository) {
         return args -> {
-            log.info("Preloding " + repository.save(new Todo("title test")));
+            log.info("Preloding " + repository.save(new Todo("initialize database")));
         };
     }
 }
